@@ -1,0 +1,13 @@
+﻿@using CRUD_dotnetProject.Models
+@model Category
+
+@if(Model != null)
+{
+    <h4>Category: @Model.CategoryName</h4>
+}
+
+@if (Model != null)
+{
+    <partial name="_Category" model="@Model" />
+}
+
